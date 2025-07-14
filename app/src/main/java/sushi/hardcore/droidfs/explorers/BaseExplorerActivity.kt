@@ -173,7 +173,7 @@ open class BaseExplorerActivity : BaseActivity(), ExplorerElementAdapter.Listene
             R.drawable.icon_view_grid
         } else {
             val displayMetrics = resources.displayMetrics
-            val columnsNumber = (displayMetrics.widthPixels / displayMetrics.density / 200 + 0.5).toInt()
+            val columnsNumber = 4
             recycler_view_explorer.layoutManager = GridLayoutManager(this, columnsNumber)
             explorerAdapter.isUsingListLayout = false
             R.drawable.icon_view_list
